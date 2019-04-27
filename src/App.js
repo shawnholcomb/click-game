@@ -5,8 +5,16 @@ import Body from './components/Body';
 import Card from "./components/Card";
 import Footer from './components/Footer';
 
-let score = 0;
-let topscore = 0;
+function shuffleArray(array) {
+  for (var i = array.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+    }
+    return array;
+}
+
 let cards = [
   {
     key: 1,
@@ -58,52 +66,42 @@ let cards = [
   }
 ]
 
-let selectedCards = []
 
 class App extends Component {
   state = {
     cards,
-    score,
-    topscore
+    score: 0,
+    topscore: 0,
+    selectedCards: []
   };
 
-  onCardClick = event => {
-    let id = event.target.attributes.getNamedItem('data-id').value;
-
-    function startGame() {
-      if (!selectedCards.includes(id)) {
-        console.log("new " + id)
-        selectedCards.push(id);
-        score++;
-      } else {
-        console.log("already picked " + id)
-        if (score > topscore) {
-          topscore = score
-        };
-        score = 0;
-        selectedCards = [];
-      }
-      console.log(selectedCards, score, topscore)
+  tallyScore = (id) => {
+    
+    if (!this.state.selectedCards.includes(id)) {
+      console.log("new " + id)
+      this.setState({ selectedCards: [...this.state.selectedCards, id], score: this.state.score + 1 })
+    } else {
+      console.log("already picked " + id, this.state.score, this.state.topscore)
+      if (this.state.score > this.state.topscore) {
+        this.setState({ topscore: this.state.score })
+      };
+      this.setState({ selectedCards: [], score: 0 })
     }
-
-    function shuffleArray(array) {
-      for (var i = array.length - 1; i > 0; i--) {
-          var j = Math.floor(Math.random() * (i + 1));
-          var temp = array[i];
-          array[i] = array[j];
-          array[j] = temp;
-      }
+  }
+  
+  shuffleCards = () => {
+    this.setState({ cards: shuffleArray(cards)})
   }
 
-    startGame()
-    shuffleArray(cards);
-    console.log(cards)
+  onCardClick = id => {
+    this.tallyScore(id)
+    this.shuffleCards();
   }
 
   render() {
     return (
       <div>
-        <Nav score={score} topscore={topscore} />
+        <Nav score={this.state.score} topscore={this.state.topscore} />
         <Body />
         <Card characters={this.state.cards} onClick={this.onCardClick} />
         <Footer />

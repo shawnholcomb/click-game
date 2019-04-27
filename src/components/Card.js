@@ -5,7 +5,7 @@ function Card(props) {
     return (
         <div className='card-container'>
             {props.characters.map((item) => (
-                <img className='card-image' src={item.image} alt="" data-id={item.key} key={item.key} onClick={props.onClick}></img>
+                <img className='card-image' src={item.image} alt="" key={item.key} onClick={() => {props.onClick(item.key)}} ></img>
             ))}
         </div>
     )
