@@ -3,8 +3,7 @@ import './App.css';
 import Nav from './components/Nav';
 import Body from './components/Body';
 import Card from "./components/Card";
-import Footer from './components/Footer';
-require 
+import Footer from './components/Footer'; 
 
 let score = 0;
 let topscore = 0;
