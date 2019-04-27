@@ -4,57 +4,58 @@ import Nav from './components/Nav';
 import Body from './components/Body';
 import Card from "./components/Card";
 import Footer from './components/Footer';
+require 
 
 let score = 0;
 let topscore = 0;
 let cards = [
   {
     key: 1,
-    image: '/assets/images/april.jpg',
+    image: 'https://github.com/shawnholcomb/click-game/blob/master/public/assets/images/april.jpg',
   },
   {
     key: 2,
-    image: '/assets/images/bebop.jpg',
+    image: 'https://github.com/shawnholcomb/click-game/blob/master/public/assets/images/bebop.jpg',
   },
   {
     key: 3,
-    image: '/assets/images/caseyjones.jpg',
+    image: 'https://github.com/shawnholcomb/click-game/blob/master/public/assets/images/caseyjones.jpg',
   },
   {
     key: 4,
-    image: '/assets/images/donatello.jpg',
+    image: 'https://github.com/shawnholcomb/click-game/blob/master/public/assets/images/donatello.jpg',
   },
   {
     key: 5,
-    image: '/assets/images/foot.jpg',
+    image: 'https://github.com/shawnholcomb/click-game/blob/master/public/assets/images/foot.jpg',
   },
   {
     key: 6,
-    image: '/assets/images/krang.jpg',
+    image: 'https://github.com/shawnholcomb/click-game/blob/master/public/assets/images/krang.jpg',
   },
   {
     key: 7,
-    image: '/assets/images/leonardo.jpg',
+    image: 'https://github.com/shawnholcomb/click-game/blob/master/public/assets/images/leonardo.jpg',
   },
   {
     key: 8,
-    image: '/assets/images/michelangelo.jpg',
+    image: 'https://github.com/shawnholcomb/click-game/blob/master/public/assets/images/michelangelo.jpg',
   },
   {
     key: 9,
-    image: '/assets/images/raphael.jpg',
+    image: 'https://github.com/shawnholcomb/click-game/blob/master/public/assets/images/raphael.jpg',
   },
   {
     key: 10,
-    image: '/assets/images/rocksteady.jpg',
+    image: 'https://github.com/shawnholcomb/click-game/blob/master/public/assets/images/rocksteady.jpg',
   },
   {
     key: 11,
-    image: '/assets/images/shredder.jpg',
+    image: 'https://github.com/shawnholcomb/click-game/blob/master/public/assets/images/shredder.jpg',
   },
   {
     key: 12,
-    image: '/assets/images/splinter.jpg',
+    image: 'https://github.com/shawnholcomb/click-game/blob/master/public/assets/images/splinter.jpg',
   }
 ]
 
