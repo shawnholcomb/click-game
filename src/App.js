@@ -38,7 +38,7 @@ let cards = [
   },
   {
     key: 8,
-    image: '/assets/images/michelangelo.jpg',
+    image: 'https://raw.githubusercontent.com/shawnholcomb/click-game/master/public/assets/images/michelangelo.jpg',
   },
   {
     key: 9,
