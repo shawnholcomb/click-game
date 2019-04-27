@@ -1,0 +1,18 @@
+.card-container {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.card-image {
+    border: 1px solid #999;
+    border-radius: 20px;
+    padding: 3px;
+    margin: 25px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+    transition: .1s ease-in-out;
+}
+
+.card-image:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 4px 25px rgba(0,0,0,0.5);
+}
