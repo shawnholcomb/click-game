@@ -3,58 +3,58 @@ import './App.css';
 import Nav from './components/Nav';
 import Body from './components/Body';
 import Card from "./components/Card";
-import Footer from './components/Footer'; 
+import Footer from './components/Footer';
 
 let score = 0;
 let topscore = 0;
 let cards = [
   {
     key: 1,
-    image: 'https://github.com/shawnholcomb/click-game/blob/master/public/assets/images/april.jpg',
+    image: 'https://raw.githubusercontent.com/shawnholcomb/click-game/master/public/assets/images/april.jpg',
   },
   {
     key: 2,
-    image: 'https://github.com/shawnholcomb/click-game/blob/master/public/assets/images/bebop.jpg',
+    image: 'https://raw.githubusercontent.com/shawnholcomb/click-game/master/public/assets/images/bebop.jpg',
   },
   {
     key: 3,
-    image: 'https://github.com/shawnholcomb/click-game/blob/master/public/assets/images/caseyjones.jpg',
+    image: 'https://raw.githubusercontent.com/shawnholcomb/click-game/master/public/assets/images/caseyjones.jpg',
   },
   {
     key: 4,
-    image: 'https://github.com/shawnholcomb/click-game/blob/master/public/assets/images/donatello.jpg',
+    image: 'https://raw.githubusercontent.com/shawnholcomb/click-game/master/public/assets/images/donatello.jpg',
   },
   {
     key: 5,
-    image: 'https://github.com/shawnholcomb/click-game/blob/master/public/assets/images/foot.jpg',
+    image: 'https://raw.githubusercontent.com/shawnholcomb/click-game/master/public/assets/images/foot.jpg',
   },
   {
     key: 6,
-    image: 'https://github.com/shawnholcomb/click-game/blob/master/public/assets/images/krang.jpg',
+    image: 'https://raw.githubusercontent.com/shawnholcomb/click-game/master/public/assets/images/krang.jpg',
   },
   {
     key: 7,
-    image: 'https://github.com/shawnholcomb/click-game/blob/master/public/assets/images/leonardo.jpg',
+    image: 'https://raw.githubusercontent.com/shawnholcomb/click-game/master/public/assets/images/leonardo.jpg',
   },
   {
     key: 8,
-    image: 'https://github.com/shawnholcomb/click-game/blob/master/public/assets/images/michelangelo.jpg',
+    image: '/assets/images/michelangelo.jpg',
   },
   {
     key: 9,
-    image: 'https://github.com/shawnholcomb/click-game/blob/master/public/assets/images/raphael.jpg',
+    image: 'https://raw.githubusercontent.com/shawnholcomb/click-game/master/public/assets/images/raphael.jpg',
   },
   {
     key: 10,
-    image: 'https://github.com/shawnholcomb/click-game/blob/master/public/assets/images/rocksteady.jpg',
+    image: 'https://raw.githubusercontent.com/shawnholcomb/click-game/master/public/assets/images/rocksteady.jpg',
   },
   {
     key: 11,
-    image: 'https://github.com/shawnholcomb/click-game/blob/master/public/assets/images/shredder.jpg',
+    image: 'https://raw.githubusercontent.com/shawnholcomb/click-game/master/public/assets/images/shredder.jpg',
   },
   {
     key: 12,
-    image: 'https://github.com/shawnholcomb/click-game/blob/master/public/assets/images/splinter.jpg',
+    image: 'https://raw.githubusercontent.com/shawnholcomb/click-game/master/public/assets/images/splinter.jpg',
   }
 ]
 
